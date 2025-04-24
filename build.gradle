@@ -23,6 +23,10 @@ ext {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+<<<<<<< HEAD
+=======
+	implementation 'org.springframework.cloud:spring-cloud-config-server'
+>>>>>>> c8d8ddd0b3d81f8542131b0fbfa8e06a41f93b37
 	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
