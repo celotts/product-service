@@ -3,16 +3,27 @@ server:
 
 spring:
   application:
-    name: product
+    name: config-service
   cloud:
     config:
       server:
         git:
           uri: https://github.com/celotts/config-repo
-  datasource:
-    url: jdbc:postgresql://localhost:5432/inventory
-    username: postgres
-    password: 1234
-  jpa:
-    hibernate:
-      ddl-auto: update
+          username: ${GIT_USERNAME}
+          password: ${GITHUB_TOKEN}
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    instance-id: ${spring.application.name}:${spring.cloud.client.hostname}:${server.port}
+    prefer-ip-address: true
+    metadata-map:
+      profile: ${spring.profiles.active}
+      version: 1.0.0
+      management.port: ${management.server.port:8899}
+
+
+
+
