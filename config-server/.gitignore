@@ -1,0 +1,72 @@
+HELP.md
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+# Ignorar archivos de Gradle
+.gradle/
+buildOutputClenup.lock
+.gitignore
+# Ignora carpetas de Gradle
+
+
+# Archivos específicos
+**/buildOutputCleanup.lock
+**/executionHistory.bin
+**/executionHistory.lock
+**/file-system.probe
+**/fileHashes.bin
+**/fileHashes.lock
+
+# Archivos de IntelliJ IDEA
+.idea/
+# Otros clásicos
+*.swp
+*.log
+
+# Otros builds si tienes más módulos
+**/build/
+
+# Carpetas de build y cache
+/.gradle/
+/build/
+
+# Archivos temporales
+*.lock
+*.tmp
+*.probe
+*.bin
+*.swo
+# Cosas de IntelliJ IDEA
