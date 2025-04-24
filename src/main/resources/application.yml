@@ -1,0 +1,18 @@
+server:
+  port: 8899
+
+spring:
+  application:
+    name: product
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/celotts/config-repo
+  datasource:
+    url: jdbc:postgresql://localhost:5432/inventory
+    username: postgres
+    password: 1234
+  jpa:
+    hibernate:
+      ddl-auto: update
