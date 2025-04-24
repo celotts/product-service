@@ -1,0 +1,6 @@
+rootProject.name = 'ms-inventory'
+
+// Incluye todos los subproyectos de tu sistema
+include 'config-server'
+include 'inventory:product-service'
+
