@@ -35,3 +35,38 @@ out/
 
 ### VS Code ###
 .vscode/
+# Ignorar archivos de Gradle
+.gradle/
+buildOutputClenup.lock
+.gitignore
+# Ignora carpetas de Gradle
+
+
+# Archivos específicos
+**/buildOutputCleanup.lock
+**/executionHistory.bin
+**/executionHistory.lock
+**/file-system.probe
+**/fileHashes.bin
+**/fileHashes.lock
+
+# Archivos de IntelliJ IDEA
+.idea/
+# Otros clásicos
+*.swp
+*.log
+
+# Otros builds si tienes más módulos
+**/build/
+
+# Carpetas de build y cache
+/.gradle/
+/build/
+
+# Archivos temporales
+*.lock
+*.tmp
+*.probe
+*.bin
+*.swo
+# Cosas de IntelliJ IDEA
