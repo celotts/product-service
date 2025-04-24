@@ -37,3 +37,5 @@ out/
 .vscode/
 # Ignorar archivos de Gradle
 .gradle/
+buildOutputClenup.lock
+.gitignore
