@@ -1,1 +1,7 @@
+
 rootProject.name = 'config-server'
+
+// Incluye todos los subproyectos de tu sistema
+include 'config-server'
+include 'inventory:product-service'
+

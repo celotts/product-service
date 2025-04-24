@@ -35,3 +35,5 @@ out/
 
 ### VS Code ###
 .vscode/
+# Ignorar archivos de Gradle
+.gradle/
